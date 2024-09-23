@@ -8,7 +8,7 @@ Our team is developing an intelligent question-and-answer software aimed at enha
 
 == Inspiration
 
-The rapid advancements in Generative AI technology have demonstrated its potential in the fields of education and learning @ref1 @ref2 @ref3 @ref4. We believe we can harness its strengths to create a tool that simplifies and enhances the educational process, making AI resources more accessible and effective for both students and educators.
+The rapid advancements in Generative AI technology have demonstrated its potential in the fields of education and learning. We believe we can harness its strengths to create a tool that simplifies and enhances the educational process, making AI resources more accessible and effective for both students and educators.
 
 == Innovation
 
@@ -59,7 +59,7 @@ Our application is built on modern web technologies and is divided into four key
 
 The frontend subsystem will focus on building an intuitive and responsive user interface for both students and teachers. 
 
-*Members*:
+*Members:*
 
 - abc
 
@@ -67,7 +67,7 @@ The frontend subsystem will focus on building an intuitive and responsive user i
 
 The backend subsystem will be responsible for interacting with frontend and database, and leverage the GAI Library to fullfil the functionality of the application. 
 
-*Members*:
+*Members:*
 
 - abc
 
@@ -75,7 +75,7 @@ The backend subsystem will be responsible for interacting with frontend and data
 
 The database subsystem will handle the data architecture and management.
 
-*Members*:
+*Members:*
 
 - abc
 
@@ -83,30 +83,32 @@ The database subsystem will handle the data architecture and management.
 
 This subsystem will be in charge of developing the general module that interacts with Generative AI, but this library will only serve for our specific function.
 
-*Members*:
+*Members:*
 
 - abc
 
 = Role of Members
 
-#table(
-  stroke: none,
-  
-  align: center,
-  inset: 12pt,
-  columns: 2,
-  table.hline(),
-  [*Name*], [*Role*],
-  table.hline(),
-  [], [], 
-  [], [], 
-  [], [], 
-  [], [], 
-  [], [], 
-  [], [], 
-  [], [], 
-  [], [], 
-)
-
-#pagebreak()
-#bibliography("ref.bib", title: "References")
+#align(center, [
+  #figure(
+      table(
+      stroke: none,
+      align: center,
+      inset: 8pt,
+      columns: 2,
+      table.hline(stroke: 1.5pt),
+      [*Name*], [*Role*],
+      table.hline(stroke: 0.75pt),
+      [Liu Zitao], [], 
+      [Chen Yixiao], [], 
+      [Chen Xinyuan], [], 
+      [Wang Tianle], [], 
+      [Cheng Xu], [], 
+      [Zhang Zihao], [], 
+      [Yang Bingjie], [], 
+      [Huang Shan], [], 
+      table.hline(stroke: 1.5pt),
+    ),
+    caption: [the Role of Each Team Member], 
+  )
+])
