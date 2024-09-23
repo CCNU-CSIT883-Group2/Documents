@@ -26,5 +26,15 @@
     }
   })
 
+  set text(size: 12.5pt, lang: "en")
+
+  set page(numbering: none)
+  outline()
+  set page(numbering: "1 / 1")
+  
+  pagebreak()
+  counter(page).update(1)
+
+  
   body
 }
