@@ -2,7 +2,7 @@
 
 #let template(body) = {
   show: bubble.with(
-    title: "CSIT881\nSystem Analysis and Project Management",
+    title: "CSIT883\nSystem Analysis and Project Management",
     subtitle: "Project Proposal",
     author: "Group 2",
     affiliation: "Wollongong Joint Institute",
