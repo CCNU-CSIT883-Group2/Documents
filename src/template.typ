@@ -35,7 +35,7 @@
     v(1.5em, weak: true)
     strong(it)
   }
-  outline(indent: auto)
+  outline(indent: auto, depth: 3, fill: repeat([·]))
   set page(numbering: "1 / 1")
   
   pagebreak()
@@ -45,6 +45,7 @@
     kind: table
   ): set figure.caption(position: bottom)
   set figure.caption(separator: auto)
+  show figure.caption: set text(size: 11pt)
   
   body
 }

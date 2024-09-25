@@ -2,6 +2,17 @@
 
 #show: template
 
+// Group Members
+#let Lzt = "Liu Zitao"
+#let Cyx = "Chen Yixiao"
+#let Cxy = "Chen Xinyuan"
+#let Wtl = "Wang Tianle"
+#let Cx = "Chen Xu"
+#let Zzh = "Zhang Zihao"
+#let Ybj = "Yang Bingjie"
+#let Hs = "Huang Shan"
+
+// Content
 = Introduction
 
 Our team is developing an intelligent question-and-answer software aimed at enhancing the learning experience for university students and instructors. This platform will enable personalized study for students and provide tools for teachers to easily create and manage quizzes. The software will leverage the powerful text-generation capabilities of Generative Artificial Intelligence (GAI) to support this functionality. Additionally, our application is web-based, allowing users to access our service anytime, anywhere.
@@ -30,6 +41,22 @@ Both students and teachers can create personalized questions based on course mat
 === Questions Management
 
 The software will offer centralized management of all questions. Users can categorize, store, and retrieve questions efficiently. This feature helps both students and teachers organize their study or teaching materials, reducing the manual effort required to manage generated content.
+
+=== Account System
+
+The application will feature a robust account management system for both students and teachers. Users will be able to create personal accounts with role-based access (student or teacher). The account system will offer:
+
+==== Profile Management
+
+Users can update personal details, set preferences for notifications, and manage their security settings (e.g., password updates).
+
+==== Progress Tracking
+
+For students, the account system will store their quiz history, performance data, and track their overall progress across sessions. 
+
+==== User Authentication
+
+Secure login methods will be in place, such as email/password combinations or OAuth integrations, ensuring privacy and protection of personal data.
 
 == Student Side
 
@@ -93,20 +120,20 @@ This subsystem will be in charge of developing the general module that interacts
   #figure(
       table(
       stroke: none,
-      align: center,
+      align: left,
       inset: 8pt,
       columns: 2,
       table.hline(stroke: 1.5pt),
       [*Name*], [*Role*],
       table.hline(stroke: 0.75pt),
-      [Liu Zitao], [], 
-      [Chen Yixiao], [], 
-      [Chen Xinyuan], [], 
-      [Wang Tianle], [], 
-      [Cheng Xu], [], 
-      [Zhang Zihao], [], 
-      [Yang Bingjie], [], 
-      [Huang Shan], [], 
+      [#Lzt], [], 
+      [#Cyx], [], 
+      [#Cxy], [], 
+      [#Wtl], [], 
+      [#Cx], [], 
+      [#Zzh], [], 
+      [#Ybj], [], 
+      [#Hs], [], 
       table.hline(stroke: 1.5pt),
     ),
     caption: [the Role of Each Team Member], 
