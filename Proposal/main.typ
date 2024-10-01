@@ -1,6 +1,6 @@
-#import "template.typ": *
+#import "../Templates/template.typ": *
 
-#show: template
+#show: template.with("Proposal")
 
 // Group Members
 #let Lzt = "Liu Zitao"

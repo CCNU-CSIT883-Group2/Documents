@@ -1,9 +1,9 @@
 #import "@preview/bubble:0.2.1": *
 
-#let template(body) = {
+#let template(tilte, body) = {
   show: bubble.with(
     title: "CSIT883\nSystem Analysis and Project Management",
-    subtitle: "Project Proposal",
+    subtitle: tilte,
     author: "Group 2",
     affiliation: "Wollongong Joint Institute",
     date: datetime.today().display(),
