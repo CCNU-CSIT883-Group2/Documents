@@ -7,7 +7,7 @@
     author: "Group 2",
     affiliation: "Wollongong Joint Institute",
     date: datetime.today().display(),
-    class: "Liu zitao, Chen Yixiao, Chen Xinyuan, Wang Tianle\nCheng Xu, Zhang Zihao, Yang Bingjie, Huang Shan",
+    class: "Liu Zitao, Cheng Yixiao, Chen Xinyuan, Wang Tianle\nChen Xu, Zhang Zihao, Yang Bingjie, Huang Shan",
     main-color: "398297",
   )
 

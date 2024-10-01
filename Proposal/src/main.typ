@@ -4,7 +4,7 @@
 
 // Group Members
 #let Lzt = "Liu Zitao"
-#let Cyx = "Chen Yixiao"
+#let Cyx = "Cheng Yixiao"
 #let Cxy = "Chen Xinyuan"
 #let Wtl = "Wang Tianle"
 #let Cx = "Chen Xu"
@@ -28,7 +28,7 @@ While many tools guide users on how to write effective prompts for learning thro
 Students and teachers must organize and handle this content manually, which is both inefficient and time-consuming. 
 Our software aims to solve this problem by offering a solution that not only generates answers but also organizes, stores, and visualizes the results in an intuitive and user-friendly way. In doing so, it also supports personalized learning for students and simplifies quiz creation and management for teachers.
 
-= Functions
+= Functions and Subsystems
 
 Our application is designed with two primary user groups in mind—students and teachers. Both will have access to shared functions that enhance their learning and teaching experience, while each group will also enjoy features tailored to their specific needs.
 
@@ -38,7 +38,7 @@ Our application is designed with two primary user groups in mind—students and 
 
 Both students and teachers can create personalized questions based on course material. Students can tailor questions to their study needs, while teachers can generate custom quizzes, ensuring a more targeted and effective learning experience.
 
-=== Questions Management
+=== Questions Storage and Delete
 
 The software will offer centralized management of all questions. Users can categorize, store, and retrieve questions efficiently. This feature helps both students and teachers organize their study or teaching materials, reducing the manual effort required to manage generated content.
 
@@ -78,6 +78,22 @@ The software will automatically store incorrect answers in a personalized "Mista
 
 Teachers can easily import and export questions in various formats. This function allows educators to streamline quiz creation by uploading existing questions or exporting quiz data for external use or archiving.
 
+== Subsystems
+
+Based on the functions outlined above, our application can be divided into three core subsystems, each responsible for handling specific functionalities:
+
+=== Questions Management System
+
+This subsystem will be responsible for all question-related operations, ensuring seamless interaction for both students and teachers.
+
+=== Account System
+
+This subsystem will manage all account-related functionalities for both students and teachers.
+
+=== Evaluation System
+
+This subsystem handles the analysis and visualization of results for students and teachers, providing valuable insights into performance.
+
 = Job Distribution
 
 Our application is built on modern web technologies and is divided into four key subsystems: Frontend, Backend, Database, and a General Library to interact with Generative Artificial Intelligence (GAI). Each subsystem will have its dedicated responsibilities to ensure smooth development and seamless integration.
@@ -88,7 +104,9 @@ The frontend subsystem will focus on building an intuitive and responsive user i
 
 *Members:*
 
-- abc
+- #Cxy
+- #Wtl
+- #Zzh
 
 == Backend
 
@@ -96,7 +114,8 @@ The backend subsystem will be responsible for interacting with frontend and data
 
 *Members:*
 
-- abc
+- #Cyx
+- #Cx
 
 == Database
 
@@ -104,7 +123,8 @@ The database subsystem will handle the data architecture and management.
 
 *Members:*
 
-- abc
+- #Ybj
+- #Hs
 
 == General Library to Interact with GAI
 
@@ -112,28 +132,31 @@ This subsystem will be in charge of developing the general module that interacts
 
 *Members:*
 
-- abc
+- #Lzt
 
 = Role of Members
+
+#let role_dev = "Developer"
+#let role_leader = "Leader"
 
 #align(center, [
   #figure(
       table(
       stroke: none,
       align: left,
-      inset: 8pt,
+      inset: (x: 20pt, y: 8pt),
       columns: 2,
       table.hline(stroke: 1.5pt),
       [*Name*], [*Role*],
       table.hline(stroke: 0.75pt),
-      [#Lzt], [], 
-      [#Cyx], [], 
-      [#Cxy], [], 
-      [#Wtl], [], 
-      [#Cx], [], 
-      [#Zzh], [], 
-      [#Ybj], [], 
-      [#Hs], [], 
+      [#Lzt], [#role_leader, #role_dev], 
+      [#Cyx], [#role_dev, Backend Manager], 
+      [#Cxy], [#role_dev, Frontend Manager], 
+      [#Hs], [#role_dev, Database Manager], 
+      [#Wtl], [#role_dev], 
+      [#Cx], [#role_dev], 
+      [#Zzh], [#role_dev], 
+      [#Ybj], [#role_dev], 
       table.hline(stroke: 1.5pt),
     ),
     caption: [the Role of Each Team Member], 
