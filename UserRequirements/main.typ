@@ -1,6 +1,6 @@
 #import "../Templates/template.typ": *
 
-#show: template.with("User Requirements")
+#show: group_work.with("User Requirements")
 
 = Sign Up
 ==== Purpose

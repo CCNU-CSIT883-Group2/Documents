@@ -1,6 +1,6 @@
 #import "../Templates/template.typ": *
 
-#show: template.with("Proposal")
+#show: group_work.with("Proposal")
 
 // Group Members
 #let Lzt = "Liu Zitao"
