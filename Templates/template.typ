@@ -46,11 +46,22 @@
   ): set figure.caption(position: bottom)
   set figure.caption(separator: auto)
   show figure.caption: set text(size: 11pt)
+
+  show heading.where(level: 1): it => {
+    counter(figure.where(kind: image)).update(0)
+    counter(figure.where(kind: table)).update(0)
+
+    it
+  }
+  
+  set figure(numbering: num =>
+    numbering("1.1", ..counter(heading).get(), num)
+  )
   
   body
 }
 
-#let individual_work(title, author, body) = {
+#let individual_work(title, author, show_toc: true, body) = {
   show: bubble.with(
     title: "CSIT883\nSystem Analysis and Project Management",
     subtitle: title,
@@ -84,10 +95,13 @@
     v(1.5em, weak: true)
     strong(it)
   }
-  outline(indent: auto, depth: 3, fill: repeat([·]))
+  if show_toc {
+    outline(indent: auto, depth: 3, fill: repeat([·]))
+    pagebreak()
+  }
   set page(numbering: "1 / 1")
   
-  pagebreak()
+
   counter(page).update(1)
 
   show figure.where(
@@ -97,7 +111,18 @@
     kind: image
   ): set figure.caption(position: bottom)
   set figure.caption(separator: auto)
-  show figure.caption: set text(size: 11pt)
+
+  // Reset counter of figure to 0, then the numbering of figure should start from 1 when in a new section
+  show heading.where(level: 1): it => {
+    counter(figure.where(kind: image)).update(0)
+    counter(figure.where(kind: table)).update(0)
+
+    it
+  }
+  
+  set figure(numbering: num =>
+    numbering("1.1", counter(heading).get().first(), num)
+  )
 
   body
 }
