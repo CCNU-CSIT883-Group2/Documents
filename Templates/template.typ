@@ -6,8 +6,8 @@
     subtitle: tilte,
     author: "Group 2",
     affiliation: "Wollongong Joint Institute",
-    date: datetime.today().display(),
-    class: "Liu Zitao, Cheng Yixiao, Chen Xinyuan, Wang Tianle\nChen Xu, Zhang Zihao, Yang Bingjie, Huang Shan",
+    date: datetime.today().display("[month repr:short]. [day], [year]"),
+    class: "Zitao Liu, Yixiao Cheng, Xinyuan Chen, Tianle Wang\nXu Chen, Zihao Zhang, Bingjie Yang, Shan Huang",
     main-color: "398297",
   )
 
@@ -38,11 +38,13 @@
   outline(indent: auto, depth: 3, fill: repeat([·]))
   set page(numbering: "1 / 1")
   
-  pagebreak()
   counter(page).update(1)
 
   show figure.where(
     kind: table
+  ): set figure.caption(position: bottom)
+    show figure.where(
+    kind: image
   ): set figure.caption(position: bottom)
   set figure.caption(separator: auto)
   show figure.caption: set text(size: 11pt)
@@ -51,12 +53,17 @@
     counter(figure.where(kind: image)).update(0)
     counter(figure.where(kind: table)).update(0)
 
+    pagebreak()
     it
   }
   
   set figure(numbering: num =>
-    numbering("1.1", ..counter(heading).get(), num)
+    numbering("1.1", counter(heading).get().first(), num)
   )
+
+  set table.cell(align: left, breakable: true)
+
+  show raw: set text(font: "Fira Code Retina")
   
   body
 }

@@ -1,0 +1,77 @@
+#import "../Templates/template.typ": *
+
+#show: individual_work.with("Review", "")
+
+#set page(columns: 2)
+
+- System Analysis/Design Difference
+- SDLC
+- System Analyst
+- General Method to Solve Problem
+- Project Attribute
+- Triple Constraints
+- Project/Program (Manager) Difference
+- System Vision Document/Project Charter
+- System Approach(3 Dim)
+- Project Phase
+- Globalization/Virtual Team(HR Management)
+- System Requirements(Classify)
+- Stakeholders(Classify)
+- NPV, ROI, Payback analysis
+- Interview/Questionire
+  - When to use
+  - How to interview/questionire
+- *Activity Diagram*
+  - Difference between Flow Chart
+  - Name/Marker
+- WBS
+  - Approach to Create WBS
+- Goal/Objectives
+- User Stories
+  - Template
+  - Acceptance Critieria
+- Events
+  - Three Types
+- Sequencing Activities
+- AOA
+  - Left to right
+  - Not to Cross
+- Gantt Chart
+  - Using Excel
+- Critical Path
+- Time Management Matrix
+- Cost Estimate
+  - Approach
+- EVM
+  - EV, AC, PV
+  - CPI, SPI meanings
+- Quality Control Technique
+  - 7 run rule
+- State Machine Diagram
+  - State and transition
+  - Evaluate State and Transition, then connect
+- System Sequence Diagram/Sequence Diagram
+  - Difference
+- Effectiveness
+- Resource Allocation
+- Resource Leveling
+  - Using AOA to Analyze
+- Social Style Profile
+- Confilct Handling
+  - 6 Approaches (Difference)
+- Communication Media
+  - Face to Face/Non-Face to Face
+- Risk Management
+  - Risk Utility
+    - 3 Types(Difference)
+  - Probability/Impact Matrix
+  - Desision Tree/EMV
+  - Risk Response Plan
+    - 5 strategies
+      - When and How
+- CRC Card / Class Diagram / Sequence Diagram
+  - Difference
+- Deployment Methods
+  - Direct/Parallel/Phased(Difference)
+- Stakeholder Engagement
+
